@@ -1,0 +1,47 @@
+.navbar-toggle {
+
+    position: fixed;
+    left: 2;
+    top: 0; /* Add this line */
+    margin-top: 1rem;
+    z-index: 1000; /* Add a high z-index to ensure it's above other content */
+    
+}
+
+.brand-name {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-left: 3rem;
+    padding-bottom: 2;
+    color:forestgreen;
+}
+
+.search-bar {
+    position: fixed;
+    margin-left: 1rem;
+    margin-top: 0.2rem;
+    width: 58%;
+    height: 4.4%;
+}
+
+.submit-button {
+    position: fixed;
+    margin-left: 15rem;
+    margin-top: .25rem;
+    width: 20%;
+    height: 4.3%;
+}
+
+.mag-icon {
+    
+    margin-left: 1.5rem;
+
+}
+
+.navbar-collapse {
+    margin-top: 3rem; /* Adjust the margin-top to create space between expanded menu and navbar-toggle */
+}
+
+.navbar-nav {
+    padding-right: 2rem; /* Adjust the padding to create space between menu items and right edge of the navbar */
+}
