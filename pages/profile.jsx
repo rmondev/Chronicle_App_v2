@@ -1,6 +1,12 @@
 import React from 'react';
 import MainNav from '@/components/MainNav';
 import { useButton } from '@mui/base/useButton';
+import LightGreenButton from '@/components/LightGreenButton'
+import LightGreenButtonTS from '@/components/LightGreenButtonTS'
+import FlightIcon from '@mui/icons-material/Flight';
+
+{ /* ICONS*/ }
+import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 
 export default function AppHome() {
   const { getRootProps } = useButton();
@@ -42,6 +48,38 @@ export default function AppHome() {
               </button>
             </div>
           </li>
+
+          { /* MaterialUI Button Using JS*/ }
+          
+          <li>
+            <div className="flex bg-white justify-center items-center py-6">
+              <LightGreenButton text="js Button"/>
+            </div>
+          </li>
+
+          { /* MaterialUI Button Using TS*/ }
+          
+          <li>
+            <div className="flex bg-white justify-center items-center py-6">
+              <LightGreenButtonTS text="ts Button"/>
+            </div>
+          </li>
+
+
+          { /* ICONS*/ }
+
+          <li>
+            <div className="flex bg-white justify-center items-center py-6">
+              <AccountBalanceIcon/>
+            </div>
+          </li>
+
+          <li>
+            <div className="flex bg-white justify-center items-center py-6">
+              <FlightIcon/>
+            </div>
+          </li>
+
         </ul>
       </div>
     </>
